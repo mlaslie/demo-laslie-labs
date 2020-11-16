@@ -13,7 +13,7 @@ def index():
 
 @app.route('/info')
 def hello():
-    return "v4.3 - The hostname is: <b>" + hostname + "</b> and the container create time was: <b>" + str(time) + "</b> \n"
+    return "v1.0 - The hostname is: <b>" + hostname + "</b> and the container create time was: <b>" + str(time) + "</b> \n"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
