@@ -4,7 +4,9 @@ EXPOSE 8080
 RUN pip install flask
 RUN mkdir -p ~/templates
 
-COPY main.py main.py
-COPY templates/index.html ~templates/index.html
+WORKDIR /project
+ADD . /project
+
+COPY templates /project/
 
 CMD python main.py
